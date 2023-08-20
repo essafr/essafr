@@ -2,7 +2,10 @@ window.requestAnimFrame = function () {
 return (
 window.requestAnimationFrame || window.webkitRequestAnimationFrame |1
 window.mozRequestAnimationFrame |1 window.oRequestAnimationFrame || window.msRequestAnimationFrame
-function (callback) {
+function (callback) { 
+    }
+  );
+};
 window.setTimeout(callback);
 function init(elemid) {
 let canvas = document .getElementById(elemid),
